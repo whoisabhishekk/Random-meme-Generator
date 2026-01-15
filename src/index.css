@@ -1,0 +1,27 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.35) 1px, transparent 0),
+              linear-gradient(135deg, #cfe3f8, #b8d6f3);
+
+  background-size: 20px 20px, cover;
+}
+ 
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%,#474bff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
